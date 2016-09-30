@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0-*",
+
+  "testRunner": "mstest",
+  "dependencies": {
+    "dotnet-test-mstest": "1.1.1-preview" ,
+    "MsTest.TestFramework": "1.0.4-preview",
+    "mylib" : {"target": "project", "version":"1.0.0-*"}
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.1"
+        }
+      },
+      "imports": "dnxcore50"
+    }
+  }
+}
